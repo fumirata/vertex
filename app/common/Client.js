@@ -460,7 +460,7 @@ class Client {
           const deleteFiles = await this.deleteTorrent(torrent, rule);
           deletedTorrentHash.push(torrent.hash);
           if (!deleteFiles) {
-            return;
+            continue;
           }
         }
       }
