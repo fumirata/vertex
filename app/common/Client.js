@@ -428,6 +428,7 @@ class Client {
       }
     }
     torrents.sort((t1, t2) => t1.hash > t2.hash ? -1 : 1);
+
     for (const _rule of this.deleteRules) {
       const rule = { ..._rule };
       rule.deleteNum = rule.deleteNum || 1;
