@@ -427,7 +427,7 @@ class Client {
         rejectDeleteHash[torrent.hash] = 1;
       }
     }
-    torrents.sort((t1, t2) => t1.hash > t2.hash ? -1 : 1);
+    torrents.sort((t1, t2) => t1.name > t2.name ? -1 : 1);
 
     for (const _rule of this.deleteRules) {
       const rule = { ..._rule };
